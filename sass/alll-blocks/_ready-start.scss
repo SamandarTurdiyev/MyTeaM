@@ -1,0 +1,60 @@
+.ready-start{
+    background: #F67E7E;
+    padding: 76px 0;
+}
+.ready__start{
+    padding: 0 70px;
+    @include flex();
+    justify-content: space-between;
+
+    @include for-tablet(){
+        padding: 0 20px;
+        column-gap: 10px;
+    }
+    @include for-nav(){
+        flex-direction: column;
+        text-align: center;
+        row-gap: 24px;
+        padding: 24px 0;
+    }
+
+    &-title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #012F34;
+
+
+        @include for-tablet(){
+            font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #012F34;
+        }
+    }
+
+    &-btn{
+        border: 2px solid #012F34;
+        border-radius: 24px;
+        padding: 9px 33px 11px 32px;
+        background: #F67E7E ;
+        color:#012F34;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        cursor: pointer;
+        transition: 0.5 s easy;
+    }
+
+    &-btn:hover{
+        color: red;
+        background: aqua;
+        border: 2px solid transparent;
+    }
+
+    &-btn:focus{
+        color: rgb(124, 0, 0);
+        background: rgb(119, 199, 239);
+        border: 2px solid transparent;
+    }
+}

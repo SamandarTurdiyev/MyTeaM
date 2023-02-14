@@ -1,0 +1,89 @@
+
+.about-team{
+    background: $teams_about-bac;
+    padding: 140px 0;
+}
+
+
+.about__teams{
+    @include flex();
+    justify-content: space-between;
+      
+
+    @include for-tablet(){
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 58px;
+    }
+
+   @include for-nav(){
+    padding: 0;
+   }
+
+&__texts-title{
+    font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+color: #FFFFFF;
+max-width: 445px;
+
+@include for-tablet(){
+    font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+color: #FFFFFF;
+padding-bottom: 64px;
+}
+
+@include for-nav(){
+    padding-left:10px;
+}
+}
+
+
+
+    &__card{
+        @include flex();
+        column-gap: 35px;
+        max-width: 540px;
+        
+
+@include for-nav(){
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+}
+
+        &-texts{
+            margin-bottom: 32px;
+        }
+
+        &-img{
+            margin-bottom: 40px;
+        }
+
+      &-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #F67E7E;
+       
+        
+      }
+
+
+      &-dev{
+        font-weight: 600;
+font-size: 15px;
+line-height: 25px;
+color: #FFFFFF;
+padding-top: 20px;
+mix-blend-mode: normal;
+opacity: 0.8;
+      }
+
+
+
+    }
+
+}
